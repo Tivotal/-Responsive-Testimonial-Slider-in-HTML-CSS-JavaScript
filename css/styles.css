@@ -1,0 +1,109 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e3f2fd;
+}
+
+.container .testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.container .testimonial .content .slide {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.content img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container .testimonial .content .slide p {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 160px;
+  color: #333;
+  text-align: center;
+}
+
+.container .testimonial .content .slide .icon {
+  font-size: 30px;
+  color: #4070f4;
+}
+
+.container .testimonial .content .slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .testimonial .content .slide .details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.container .testimonial .content .slide .details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+
+.container .nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.container .nav-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.container .nav-btn::after,
+.container .nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+
+@media (max-width: 768px) {
+  .container .testimonial .content .slide p {
+    padding: 0 20px;
+  }
+}
